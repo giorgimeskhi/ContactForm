@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.bg{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(233,78,76);
+    background: -moz-linear-gradient(90deg, rgba(233, 78, 76, 1) 0%, rgba(233, 162, 74, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(233, 78, 76, 1) 0%, rgba(233, 162, 74, 1) 100%);
+    background: linear-gradient(90deg, rgba(233, 78, 76, 1) 0%, rgba(233, 162, 74, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e94e4c", endColorstr="#e9a24a", GradientType=1);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.container{
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+.contact{
+    position: relative;
+    width: 50%;
+}
+.contact form{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(64,64,64,.3);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    padding: 15px 30px;
+    text-align: center;
+
+}
+.text{
+    width: 50%;
+    text-align: left;
+}
+input , textarea{
+    border: none;
+    border-bottom: 1px solid rgba(233,78,76,.8);
+    font-size: 1.2rem;   
+}
+input[type="text"]{
+
+    padding: 5px 10px;
+    margin: 10px 5px;
+    width: calc(50% - 40px);
+}
+input[type="email"]{
+
+    padding: 5px 10px;
+    margin: 10px 5px;
+    width: calc(100% - 40px);
+    
+}
+textarea{
+    padding: 5px 10px;
+    margin: 10px 5px;
+    width: calc(100% - 40px);
+    height: 350px;
+    resize: none;
+    height: 260px;
+}
+button{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: rgba(233, 78, 76, 1);
+    color: #fff;
+    font-size: 1.3rem;
+    transition: .4s ease-in-out;
+}
+h1{
+    text-transform: uppercase;
+    color: rgba(233,78,76, 1);
+}
+p{
+    line-height: 1.5rem;
+}
+button:hover {
+
+    background: rgb(233, 78, 76);
+}
